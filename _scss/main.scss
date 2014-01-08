@@ -19,6 +19,10 @@ body {
   text-align: center;
 }
 
+:fullscreen a {
+    transition: transform 1s
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
@@ -28,6 +32,16 @@ p { margin: 1em 0; }
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
+a {
+  -webkit-border-radius: 14px;
+  border-radius:14px;
+  box-shadow: 10px 10px 10px black;
+  background-color:rgba(black,0.5);
+  padding:0.25em;
+  border:1px solid rgba(black,0.1);
+  color:red;
+  opacity:0.8;
+}
 
 /*****************************************************************************/
 /*
@@ -158,3 +172,6 @@ a:visited { color: #a0a; }
 .post pre.terminal code {
   background-color: #333;
 }
+
+
+@import "syntax";
