@@ -9,7 +9,7 @@ author:
   name: Tom Morgan
   email: morganesque@gmail.com
 
-# Grunt handles images and assets.
+# Grunt handles images and assets. # No it doesn't.
 # exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
 
 include: ['.htaccess']
