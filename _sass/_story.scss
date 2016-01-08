@@ -1,0 +1,22 @@
+#story {
+  p {
+    margin-bottom:0;
+  }
+  p+p {
+    text-indent:1em;
+  }
+}
+
+.cover {
+  display:block;
+  width:33%;
+  margin:0 auto 50px;
+  border:1px solid black;
+  background-color:#8EBF5A;
+}
+
+body {
+  font-family: "Sentinel SSm A", "Sentinel SSm B";
+  font-style: normal;
+  font-weight: 400;
+}

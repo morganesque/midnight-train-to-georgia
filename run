@@ -1,0 +1,4 @@
+#!/bin/bash
+trap 'kill %1; kill %2' SIGINT
+bundle exec jekyll serve &\
+browser-sync start --files "_site/**/*" --server _site
