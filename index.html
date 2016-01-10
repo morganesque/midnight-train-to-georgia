@@ -11,14 +11,17 @@ title: "front page"
       <div class="medium-7 columns">
         <h1 class="title">{{ site.title }}</h1>
         <h4 class="subheader">{{ site.description }}</h4>
-        <ul class="list">
+        <table class="list">
         {% assign pages = site.pages | sort: "num" %}
         {% for pg in pages %}
+            <tr>
             {% if pg.layout == 'chap' %}
-            <li>{{ pg.num }}<a href="{{pg.url}}">{{ pg.title }}</a></li>
+            <td>{{ pg.num }}</td>
+            <td><a href="{{pg.url}}">{{ pg.title }}</a></td>
+            <td class="text-right"><small>({{ pg.content | number_of_words }})</small></td>
             {% endif %}
         {% endfor %}
-        </ul>
+        </table>
       </div>
     </div>
   </div>

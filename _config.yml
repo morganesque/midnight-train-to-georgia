@@ -16,3 +16,5 @@ github_username:  morganesque
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
