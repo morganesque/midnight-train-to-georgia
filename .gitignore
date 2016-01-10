@@ -1,0 +1,6 @@
+_site
+.sass-cache
+.jekyll-metadata
+foundation-sites
+jquery
+what-input
