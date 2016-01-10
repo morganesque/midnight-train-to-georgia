@@ -1,0 +1,25 @@
+---
+layout: default
+title: "front page"
+---
+<div class="row" id="story">
+  <div class="medium-8 medium-centered columns">
+    <div class="row">
+      <div class="medium-5 columns">
+        <img src="img/cover-sm.png" class="cover" alt="cover of the book"/>
+      </div>
+      <div class="medium-7 columns">
+        <h1 class="title">{{ site.title }}</h1>
+        <h4 class="subheader">{{ site.description }}</h4>
+        <ul class="list">
+        {% assign pages = site.pages | sort: "num" %}
+        {% for pg in pages %}
+            {% if pg.layout == 'chap' %}
+            <li>{{ pg.num }}<a href="{{pg.url}}">{{ pg.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

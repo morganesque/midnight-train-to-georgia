@@ -1,18 +1,39 @@
 #story {
+  margin-top:30px;
   p {
     margin-bottom:0;
   }
   p+p {
     text-indent:1em;
   }
+  p.top-nav {
+    margin-bottom:15px;
+  }
+}
+
+.title {
+  line-height:1.2em;
+}
+.start {margin-top:90px;}
+.list {margin-top:30px;}
+.num {
+  float:right;
+  line-height:2;
+}
+.chap_title {
+  margin-bottom:30px;
 }
 
 .cover {
   display:block;
-  width:33%;
+  width:100%;
   margin:0 auto 50px;
   border:1px solid black;
   background-color:#8EBF5A;
+}
+.next {
+  margin-top:30px;
+  text-align:right
 }
 
 body {

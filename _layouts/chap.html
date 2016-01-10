@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="row" id="story">
+      <div class="medium-6 medium-centered columns">
+        <p class="top-nav"><small><a href="/">home</a></small></p>
+        <h4 class="num subheader">{{page.num}}</h4>
+        <h2 class="chap_title">{{ page.title }}</h2>
+        {{ content }}
+        <h3 class="next"><a href="/chap/{{ page.next }}">Next ⇨</a></h3>
+      </div>
+    </div>
+  </body>
+
+</html>
