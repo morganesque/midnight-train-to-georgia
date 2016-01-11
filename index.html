@@ -1,6 +1,5 @@
 ---
 layout: default
-title: "front page"
 ---
 <div class="row" id="story">
   <div class="medium-8 medium-centered columns">
@@ -13,15 +12,20 @@ title: "front page"
         <h4 class="subheader">{{ site.description }}</h4>
         <table class="list">
         {% assign pages = site.pages | sort: "num" %}
+        {% assign tot = 0 %}
         {% for pg in pages %}
             <tr>
             {% if pg.layout == 'chap' %}
             <td>{{ pg.num }}</td>
-            <td><a href="{{pg.url}}">{{ pg.title }}</a></td>
-            <td class="text-right"><small>({{ pg.content | number_of_words }})</small></td>
+            <td><a href="{{ pg.url | prepend: site.baseurl }}">{{ pg.title }}</a></td>
+            {% assign num = pg.content | number_of_words %}
+            {% assign tot = tot | plus: num %}
+            <td class="text-center"><small>({{ num }})</small></td>
             {% endif %}
         {% endfor %}
+          <tr><td></td><td></td><td class="text-center"><strong><small>({{ tot }})</small></strong></td></tr>
         </table>
+
       </div>
     </div>
   </div>

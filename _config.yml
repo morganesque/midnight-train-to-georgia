@@ -10,7 +10,7 @@ title: Midnight Train To Georgia
 email: tsmorgan@gmail.com
 description: A Novel
 url: "http://morganesque.github.io/" # the base hostname & protocol for your site
-baseurl: "/midnight-train-to-georgia" # the subpath of your site, e.g. /blog
+baseurl: "/midnight-train-to-georgia/" # the subpath of your site, e.g. /blog
 twitter_username: morganesque
 github_username:  morganesque
 
